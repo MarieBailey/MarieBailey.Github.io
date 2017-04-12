@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Marie Bailey Portfolio</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+
+  <body>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("header");
+        if (x.className === "header") {
+            x.className += " responsive";
+        } else {
+            x.className = "header";
+        }
+    }function myFunction() {
+        var x = document.getElementById("header");
+        if (x.className === "header") {
+            x.className += " responsive";
+        } else {
+            x.className = "header";
+        }
+    }
+
+        </script>
+
+    <div class="header" id="header">
+      <div class="links">
+        <a>HOME</a>
+        <a>ABOUTME</a>
+        <a>ACAWC</a>
+        <a>GRAPHICS</a>
+        <a>PAINTINGS</a>
+        <a>UNIVERSITY</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="banner">
+      <img src="images/top.jpg" alt="Marie Bailey logo Image" />
+    </div>
+
+<div class="slideback">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/slide-1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/slide-2.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/slide-3.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade" >
+        <div class="numbertext">4 / 4</div>
+        <img src="images/slide-4.jpg" style="width:100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</div>
+
+
+<div class="about">
+  <img src="images/about.png" />
+  <div class="abouttext">
+    <img src="images/flower.png" />
+    <br />
+    About Me
+    <div class="text">
+      I’m so glad that you are here! My name’s Marie Bailey and I’m a Massey University Student studying a Bachelor of Design majoring in Visual Communication. I’m originally for Hastings, Hawke’s Bay and am currently living in Central Wellington, and I’m honestly loving it here, the creative atmosphere, the magnificent city life, and of course the amazing people.
+
+I’ve always loved art and design, even from an early age. I would always be on a computer creating little animations or trying to complete large scale paintings (which of course I never finished.) I realised that I wanted to be a graphic designer when I won a National Adobe competition in 2016. After achieving that, I was sent to America to compete in the World Adobe championship where I represented New Zealand. I was awarded 9th place and People’s Choice out of 33 people from 17 different countries. This is an amazing achievement in its own but it’s truly extraordinary as there were over 220,000 students from around the world who tried to enter this Championship. It was a once in a lifetime experience and I’m thankful that I got the opportunity to compete in the competition. Since then, I realised that designing is my passion, and I wouldn’t want to have it any other way.
+
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+  </body>
+</html>

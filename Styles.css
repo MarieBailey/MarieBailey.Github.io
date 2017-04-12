@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+div{
+  ouline: black 1px dotted;
+}
+
+body{
+    margin:0;
+}
+
+.header{
+  height: 55px;
+  background-color: #fbc8b4;
+  font-family: 'calibri', sans-serif;
+  color: #f06c64;
+  word-spacing: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .icon{
+  display: none;
+  margin-top: -20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #f06c64;
+}
+
+.links{
+  text-align: center;
+  padding-top: 17px;
+  display: block;
+}
+
+.links a:hover{
+  color: white;
+}
+
+.banner{
+  border-bottom: white 5px solid;
+}
+
+.banner img{
+  max-width: 100%
+}
+
+.slideback{
+  background-color: #fbc8b4;
+  padding: 50px 0;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: grey;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.about{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about img{
+  float: left;
+}
+.abouttext{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media screen and (max-width: 600px) {
+  .header a:not(:first-child) {display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 16px;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    background-color:#fbc8b4;
+  }
+}
