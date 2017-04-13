@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-div{
-  outline: lime 1px dotted;
-}
-
 body{
     margin:0;
 }
@@ -223,7 +219,7 @@ div.gallery:hover{
 
 div.gallery img{
   width: 100%;
-  height:auto;
+  height: 180px;
 }
 
 .form-back{
