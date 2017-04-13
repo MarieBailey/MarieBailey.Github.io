@@ -31,8 +31,18 @@ body{
   padding-top: 17px;
   display: block;
 }
+.links a:link{
+  text-decoration: none;
+}
 
 .links a:hover{
+  color: white;
+}
+
+.links a:visited{
+  color: #f06c64;
+}
+.links a:visited:hover{
   color: white;
 }
 
@@ -176,6 +186,54 @@ body{
   margin-right: auto;
   width: 920px;
 }
+
+.portfolio{
+  margin-left: auto;
+  margin-right: auto;
+  width: 920px;
+}
+
+.portfolio-title{
+  text-align: left;
+  font-family: 'calibri', sans-serif;
+  color: #f8aba7;
+  font-size: 2rem;
+}
+
+.portfolio-text{
+  text-align: left;
+  font-family: 'calibri', sans-serif;
+  color: #f8aba7;
+}
+
+.portfolio-text a{
+  text-decoration: none;
+}
+.portfolio-text a:link{
+  color: #570904;
+}
+.portfolio-text a:visited{
+  color: #57042f;
+}
+.portfolio-text a:hover{
+  color: white;
+}
+
+div.gallery{
+  margin: 5px;
+  border: 1px solid #f06c64;
+  float: left;
+}
+
+div.gallery:hover{
+  border: 1px solid white;
+}
+
+div.gallery img{
+  width: 100%;
+  height:auto;
+}
+
 
       @-webkit-keyframes fade {
         from {opacity: .4}
