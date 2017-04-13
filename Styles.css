@@ -204,6 +204,60 @@ div.gallery img{
   height:auto;
 }
 
+.form-back{
+  margin-top: 50px;
+  background-image: url("images/form-background.png");
+  width: 476px;
+  height: 505px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-text{
+  padding-top: 120px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 30px;
+  text-align: left;
+  font-family: 'calibri', sans-serif;
+  color: #cb3634;
+  float: left;
+}
+
+input[type=text] {
+  width: 85%;
+  padding: 12px 12px;
+  margin: 8px 35px;
+  box-sizing: border-box;
+
+  border: 2px solid #d34139;
+  border-radius: 4px;
+  background-color: #d6564f;
+  color: #f48c8f;
+  resize: none;
+}
+
+input[type=text]:focus{
+  border: 3px solid #f48c8f;
+}
+input[name=Message] {
+height: 100px;
+}
+
+input[type=submit]{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8aba7;
+  border: 2px solid #f06c64;
+  color: #d6564f;
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.center{
+  text-align: center;
+}
 
       @-webkit-keyframes fade {
         from {opacity: .4}
