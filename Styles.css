@@ -8,6 +8,26 @@ body{
     margin:0;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+      background-color: #d6564f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 2rem;
+}
+
+#myBtn:hover {
+    background-color: #5e0500;
+}
+
 .header{
   height: 55px;
   background-color: #fbc8b4;
@@ -33,6 +53,7 @@ body{
 }
 .links a:link{
   text-decoration: none;
+  color: #f06c64;
 }
 
 .links a:hover{
@@ -213,11 +234,13 @@ div.gallery img{
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .form-text{
   padding-top: 120px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 30px;
   text-align: left;
@@ -261,6 +284,7 @@ input[type=submit]{
   text-align: center;
 }
 
+
 .footer{
   height: 77px;
   background-color: #fbc8b4;
@@ -269,14 +293,16 @@ input[type=submit]{
 .footer-text{
   font-family: 'calibri', sans-serif;
   color: white;
-  padding-right: 30px;
+  padding-right: 120px;
   float: right;
   padding-top: 30px;
 }
 .footer img{
-  text-align: right;
+  text-align: left;
+  float: left;
   padding-left: 30px;
   padding-top: 5px;
+  max-width: 75%;
 }
 
       @-webkit-keyframes fade {
@@ -360,6 +386,9 @@ input[type=submit]{
   .title img{
     float: none;
     display: block;
+    max-width: 100%;
+  }
+  .form-back{
     max-width: 100%;
   }
 }

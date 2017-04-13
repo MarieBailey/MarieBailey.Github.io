@@ -31,9 +31,9 @@
       <div class="links">
         <a href="#ABOUTMELINK">ABOUTME</a>
         <a href="#GRAPHICSLINK">GRAPHICS</a>
-        <a>PAINTINGS</a>
-        <a>UNIVERSITY</a>
-        <a>ACAWC</a>
+        <a href="#PAINTINGSLINK">PAINTINGS</a>
+        <a href="#UNIVERSITYLINK">UNIVERSITY</a>
+        <a href="#ACAWCLINK">ACAWC</a>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
@@ -183,7 +183,9 @@
 
         <div class="painting">
           <div class="portfolio-title">
-            Paintings
+            <a name="PAINTINGSLINK">
+              Paintings
+            </a>
             <br />
           </div>
           <div class="portfolio-text">
@@ -265,7 +267,9 @@
 
         <div class="university">
           <div class="portfolio-title">
-            University
+            <a name="UNIVERSITYLINK">
+              University
+            </a>
           </div>
 
           <div class="portfolio-text">
@@ -347,7 +351,9 @@
 
         <div class="ACAWC">
           <div class="portfolio-title">
-            ACAWC Adobe Certified Associate World Championship
+            <a name="ACAWCLINK">
+              ACAWC Adobe Certified Associate World Championship
+            </a>
           </div>
 
           <div class="portfolio-text">
@@ -436,21 +442,27 @@
 <div class="form-back">
   <div class="form-text">
     I'm always open to new ideas and feedback about my designs. Feel free to comment, suggest new ideas or ask questions.
+<br />
+      <b>Submit button doesn't work as I have no .php knowledge to get it to submit any replies. Sorry.</b>
+
   </div>
 
+<!--- Submit button doesn't work as I have no .php knowledge to get it to submit any replies. Sorry. --->
   <form action="/actiion.php">
-    <input type="text" name="Name" value="Name">
+    <input type="text" name="Name" placeholder="Name">
     <br />
-    <input type="text" name="Email Address" value="Email Address">
+    <input type="text" name="Email Address" placeholder="Email Address">
     <br />
-    <input type="text" name="Message" value="Message">
-    <br /><br />
+    <input type="text" name="Message" placeholder="Message">
+    <br />
   <div class="center">
     <input type="submit" value="Send">
   </div>
   </form>
+
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
 
 <div class="footer">
   <img src="images/footer-logo.png" />
@@ -458,6 +470,7 @@
     2017 &middot; by Marie Bailey
   </div>
 </div>
+
 
 <script>
 var slideIndex = 0;
@@ -475,7 +488,22 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 </script>
+<script>
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+</script>
 
   </body>
 </html>
