@@ -167,6 +167,7 @@ body{
   color: #f8aba7;
   font-size: 2rem;
   float: left;
+  padding-top: 30px;
 }
 
 .portfolio-text{
@@ -211,6 +212,7 @@ div.gallery img{
   height: 505px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
 }
 
 .form-text{
@@ -257,6 +259,24 @@ input[type=submit]{
 }
 .center{
   text-align: center;
+}
+
+.footer{
+  height: 77px;
+  background-color: #fbc8b4;
+}
+
+.footer-text{
+  font-family: 'calibri', sans-serif;
+  color: white;
+  padding-right: 30px;
+  float: right;
+  padding-top: 30px;
+}
+.footer img{
+  text-align: right;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 
       @-webkit-keyframes fade {
